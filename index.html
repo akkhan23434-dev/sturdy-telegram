@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Arsh ❤️ Meri Maafi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #ffe6f0, #ffb6c7);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', 'Poppins', system-ui, sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 550px;
+            width: 100%;
+            background: white;
+            border-radius: 60px 60px 70px 70px;
+            box-shadow: 0 30px 45px rgba(255, 80, 100, 0.3);
+            text-align: center;
+            padding: 35px 28px 45px;
+            transition: 0.3s;
+            border: 2px solid #ffb7c5;
+        }
+
+        .emoji-big {
+            font-size: 85px;
+            display: inline-block;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%,100%{ transform: translateY(0); }
+            50%{ transform: translateY(-12px); }
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #c41e3a;
+            margin: 15px 0 10px;
+            font-weight: 800;
+        }
+
+        .sub {
+            font-size: 20px;
+            color: #ff6680;
+            font-weight: 500;
+            margin-bottom: 25px;
+            background: #fff0f3;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 50px;
+        }
+
+        .message-box {
+            background: #fff5f7;
+            border-radius: 40px;
+            padding: 25px 20px;
+            margin: 20px 0;
+            text-align: left;
+            border-left: 8px solid #ff809a;
+        }
+
+        .message-box p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #4a2e36;
+            margin-bottom: 12px;
+        }
+
+        .heart-line {
+            font-size: 24px;
+            letter-spacing: 5px;
+            color: #ff4d6d;
+            margin: 15px 0;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 60px;
+            margin: 12px 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.2s;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: scale(1.02);
+        }
+
+        .secret-note {
+            background: #fce4ec;
+            border-radius: 35px;
+            padding: 20px;
+            margin-top: 25px;
+            font-size: 15px;
+            color: #b23c4f;
+        }
+
+        .secret-note textarea {
+            width: 100%;
+            border-radius: 35px;
+            border: 1px solid #ffb7c5;
+            padding: 12px 18px;
+            font-size: 16px;
+            margin: 10px 0;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        .send-btn {
+            background: #c41e3a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #b97082;
+        }
+
+        .note-call {
+            font-size: 12px;
+            background: #ffe0e7;
+            padding: 8px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="emoji-big">
+        🙏❤️🥺
+    </div>
+    <h1>Sorry meri jaan</h1>
+    <div class="sub">From Arsh ❤️</div>
+
+    <div class="message-box">
+        <p>🤍 <strong>Meri galti</strong> — main jaanta hoon maine tumhe hurt kiya. Aur uske liye main <strong>dil se maafi maangta hoon</strong>.</p>
+        <p>🌸 Tum mere liye duniya ki sabse special ho. Maine jo bhi galat kaha/kiya, wo mere emotions control mein nahi the. <br> Tumhare bina main adhoora hoon. 🥀</p>
+        <div class="heart-line">
+            ❤️ 💔 ➡️ ❤️‍🩹
+        </div>
+        <p>✨ <strong>Promise:</strong> Aage se khayal rakhunga, tumhe kabhi rone nahi dunga. Please ek mauka de do mera pyaar. 💌</p>
+    </div>
+
+    <!-- Sirf WhatsApp button - number 03131054790 -->
+    <a href="https://wa.me/923131054790?text=Arsh%20❤️%20Maine%20maaf%20kar%20diya%20tumhe%20🥺%20Chalo%20baat%20karte%20hain." class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> 📲 WhatsApp pe maaf kar do
+    </a>
+
+    <div class="secret-note">
+        <i class="fas fa-heart" style="color:#ff4d6d"></i> <strong>Tum bhi kuch kehna chahti ho mujhe?</strong> <i class="fas fa-heart" style="color:#ff4d6d"></i>
+        <textarea id="msgToArsh" rows="2" placeholder="Arsh, main maaf karti hoon kyunki... 🥺"></textarea>
+        <button class="send-btn" onclick="sendNote()">📨 Yeh message Arsh tak pahunchao</button>
+        <div class="note-call">
+            ⚠️ Sirf WhatsApp hai, call nahi. <br> Toh message karke bata do maaf kiya ya nahi ❤️
+        </div>
+    </div>
+    <footer>
+        🌹 Tumhari ek hansti hui muskaan — meri zindagi 🌹
+    </footer>
+</div>
+
+<script>
+    function sendNote() {
+        let userMessage = document.getElementById('msgToArsh').value;
+        if(userMessage.trim() === "") {
+            alert("Kuch likho na! Dil se likhna ❤️");
+            return;
+        }
+        // Arsh ka WhatsApp number (without '+' sign)
+        let phone = "923131054790";
+        let encodedMsg = encodeURIComponent("💌 Tumhara Arsh ke liye message:\n\n" + userMessage + "\n\n — Tumhari pyaari gf ❤️");
+        let url = "https://wa.me/" + phone + "?text=" + encodedMsg;
+        window.open(url, '_blank');
+    }
+</script>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
